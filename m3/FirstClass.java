@@ -42,10 +42,11 @@ public class FirstClass {
 		//4. Print a given string in reverse order without using the reverse( ) method
 		System.out.println("Entetr another String to see it in reverse");
 		String forward = input.nextLine();
+		char[] arr = null;
 		
 		for (int j=forward.length() - 1;j>=0;j--) {
-			System.out.println(forward.charAt(j));
-			
+			System.out.print(forward.charAt(j));
+			arr =forward.conact(charAt[j]);
 		}
 		
 		

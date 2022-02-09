@@ -4,7 +4,10 @@ package m3;
 import java.util.Scanner;
 public class Mod3Week1_HW3calculator {
 	
+	
+	
 	 static int addNums(int x, int y) {
+		 
 		return x+y;
 	}
 	
@@ -12,7 +15,7 @@ public class Mod3Week1_HW3calculator {
 		return x-y;
 	}
 	
-	static int mulitplyNums(int x,int y) {
+	static int multiplyNums(int x,int y) {
 		return x*y;
 	}
 	
@@ -30,16 +33,35 @@ public class Mod3Week1_HW3calculator {
 		System.out.println("Please enter a number from the selection...");
 		System.out.println( "OPTIONS");
 		System.out.println(" 1.Add /n 2.Subtract /n 3.Multiply /n 4.Division /n 5.Exit");
+		int inp = input.nextInt();
+		System.out.println("");
+		System.out.println("Enter first number");
+		int input1 = input.nextInt();
+		System.out.println("Enter second number...");
+		int input2 = input.nextInt();
 
 		
-		switch (input){
 		
-		case 1: addNums
+		
+		switch (inp){		
+		case 1: int addIt =addNums(input1,input2);
+				System.out.println(addIt);
+				break;
+		case 2: int subtractIt = subtractNums(input1,input2);
+				System.out.println(subtractIt);
+				break;
+		case 3: int multiplyIt = multiplyNums(input1,input2);
+				System.out.println(multiplyIt);
+				break;
+		case 4: int divideIt = divideNums(input1,input2);
+				System.out.println(divideIt);
+				break;
+		case 5: System.out.println("thanks for using");
+				
+				break;
+		
+		}System.exit(0);
 			
-		}
-		
-		
-		
 
 	}
 

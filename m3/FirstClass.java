@@ -39,15 +39,19 @@ public class FirstClass {
 		}else
 			System.out.println("not same");
 		
-		//4. Print a given string in reverse order without using the reverse( ) method
-		System.out.println("Entetr another String to see it in reverse");
+		//4. Print a given string in reverse order without using the 
+		//reverse( ) method
+		System.out.println("Enter another String to see it in reverse");
 		String forward = input.nextLine();
-		char[] arr = null;
+		String reverse="";
 		
 		for (int j=forward.length() - 1;j>=0;j--) {
-			System.out.print(forward.charAt(j));
-			arr =forward.conact(charAt[j]);
-		}
+			//System.out.print(forward.charAt(j));
+			reverse +=forward.charAt(j);
+			
+		}System.out.println(reverse);
+		
+		//5.5. Print the total number of consonants and vowels in a given string
 		
 		
 		

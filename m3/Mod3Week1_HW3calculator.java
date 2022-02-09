@@ -30,15 +30,25 @@ public class Mod3Week1_HW3calculator {
 		// TODO Auto-generated method stub
 		
 		Scanner input = new Scanner(System.in);
+		
+		
 		System.out.println("Please enter a number from the selection...");
 		System.out.println( "OPTIONS");
-		System.out.println(" 1.Add /n 2.Subtract /n 3.Multiply /n 4.Division /n 5.Exit");
+		System.out.println(" 1.Add \n 2.Subtract \n 3.Multiply \n 4.Division \n 5.Exit");
+		
+		
+		
 		int inp = input.nextInt();
 		System.out.println("");
-		System.out.println("Enter first number");
+		if (inp!=5) {
+			
+		
+			System.out.println("Enter first number");
 		int input1 = input.nextInt();
 		System.out.println("Enter second number...");
 		int input2 = input.nextInt();
+		
+		
 
 		
 		
@@ -57,11 +67,12 @@ public class Mod3Week1_HW3calculator {
 				System.out.println(divideIt);
 				break;
 		case 5: System.out.println("thanks for using");
-				
-				break;
+				System.exit(0);
+				return;
 		
 		}System.exit(0);
-			
+		}else 
+			System.out.println("bye");
 
 	}
 
